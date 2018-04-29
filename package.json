@@ -1,0 +1,42 @@
+{
+  "name": "protractor-ts-seed",
+  "version": "1.0.0",
+  "description": "Runs Protractor E2E tests from a Typescript setup",
+  "author": {
+    "name": "Narottam Singh",
+    "email": "narottamgla@gmail.com",
+    "skype": "narottam.singh9"
+  },
+  "license": "MIT",
+  "scripts": {
+    "debug": "node --inspect --debug-brk ./node_modules/.bin/protractor tmp/conf.js",
+    "tsc": "tsc",
+    "pretest": "tsc",
+    "test": "protractor tmp/conf.js",
+    "test-qa": "npm run test",
+    "pretest-prod": "tsc",
+    "test-prod": "protractor tmp/conf.js --params.baseUrl=http://www.thejamstop.com/",
+    "pretest-qa-cross": "tsc",
+    "test-qa-cross": "protractor tmp/conf.crossBrowsers.js",
+    "pretest-prod-cross": "tsc",
+    "test-prod-cross": "protractor tmp/conf.crossBrowsers.js --params.baseUrl=http://www.thejamstop.com/"
+  },
+  "dependencies": {
+    "@log4js-node/log4js-api": "^1.0.0",
+    "@types/jasmine": "~2.5.53",
+    "@types/jasminewd2": "~2.0.2",
+    "@types/nconf": "0.0.37",
+    "@types/node": "~6.0.60",
+    "jasmine": "^2.6.2",
+    "jasmine-spec-reporter": "^4.1.0",
+    "protractor": "^5.3.1",
+    "typescript": "~2.4.0"
+  },
+  "devDependencies": {
+    "fs": "0.0.1-security",
+    "log4js": "^2.5.3",
+    "log4js-protractor-appender": "^1.1.2",
+    "nconf": "^0.10.0",
+    "ts-node": "^3.0.2"
+  }
+}
