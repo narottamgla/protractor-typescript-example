@@ -6,7 +6,7 @@ Feel free to modify and use it for your own purposes with no restrictions.
 Based on Protractor team's [example Typescript project](https://github.com/angular/protractor/tree/master/exampleTypescript), Angular-CLI generated project, and [qualityshepherd's example page object project](https://github.com/qualityshepherd/protractor-example).
 
 ## Project Description:
-* Project initially setup with Protractor version 5.1.2.
+* Project setup with Protractor version 5.1.2.
 * Makes use of Page Objects.
 * Written in Typescript, compiled to ES5 Javascript.
 * Page Object classes are in the `./pages` directory and should inherit from `basePage.po`.

@@ -33,12 +33,12 @@ export class loginPage extends BasePage{
      * @param {string} username Username to login as
      * @param {string} password Password to login as
      */
-    login(username: string, password: string) {
+    login(loginData) {
         const usernameInput = element(by.id('user_email'));
         const passwordInput = element(by.id('user_password'));
         const submitButton = element(by.id('submit'));
-        usernameInput.sendKeys(username);
-        passwordInput.sendKeys(password);
+        usernameInput.sendKeys(loginData.username);
+        passwordInput.sendKeys(loginData.password);
         submitButton.click();
     }
 

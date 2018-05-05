@@ -8,7 +8,7 @@ import {BasePage} from "./basePage.po";
  * @export
  * @class BasePage
  */
-export class registrationPage extends BasePage{
+export class registrationPage extends BasePage {
 
     getRegistrationHeader() {
         return element(by.css('#validate-form h2:nth-child(1)'));
@@ -57,13 +57,13 @@ export class registrationPage extends BasePage{
      * @param {string} username Username to login as
      * @param {string} password Password to login as
      */
-    registerUser(firstName: string, lastName: string, email: string, password: string, cpassword: string) {
+    registerUser(registrationData) {
         this.userTypeArtist().click();
-        this.userFirstName().sendKeys(firstName);
-        this.userLastName().sendKeys(lastName);
-        this.userEmail().sendKeys(email);
-        this.userPassword().sendKeys(password);
-        this.userConfirmPassword().sendKeys(cpassword);
+        this.userFirstName().sendKeys(registrationData.firstname);
+        this.userLastName().sendKeys(registrationData.lastname);
+        this.userEmail().sendKeys(registrationData.useremail);
+        this.userPassword().sendKeys(registrationData.password);
+        this.userConfirmPassword().sendKeys(registrationData.cpassword);
         this.userAggrement().click();
         this.createUserButton().click();
     }

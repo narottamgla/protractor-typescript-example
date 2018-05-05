@@ -37,9 +37,9 @@ export let config: Config = {
       baseUrl: 'http://www.thejamstop.com/user/login'
   },
  // specs: [ 'specs/**/*spec.js' ],
-    specs: [ 'specs/**/login.spec.js' ],
+ //   specs: [ 'specs/**/login.spec.js' ],
 
-  //  specs: [ 'specs/**/register.spec.js' ],
+    specs: [ 'specs/**/register.spec.js' ],
 
   seleniumAddress: 'http://localhost:4444/wd/hub'
 };
