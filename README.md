@@ -19,6 +19,8 @@ Based on Protractor team's [example Typescript project](https://github.com/angul
 * Install [Node](http://nodejs.org) (v6.x.x or later)
 * Follow setup steps described [here](http://www.protractortest.org/#/tutorial#setup)
 * `npm install` to install the project dependencies
+* 'npm install protractor -g' to install protractor globally
+* Now install selenium standalone- `webdriver-manager update`
 * In a separate command line window, run `webdriver-manager start` and keep it running.
 
 ## Run tests:
