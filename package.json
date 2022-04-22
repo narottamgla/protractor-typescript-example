@@ -36,7 +36,7 @@
     "fs": "0.0.1-security",
     "log4js": "^2.5.3",
     "log4js-protractor-appender": "^1.1.2",
-    "nconf": "^0.10.0",
+    "nconf": "^0.11.4",
     "ts-node": "^3.0.2"
   }
 }
